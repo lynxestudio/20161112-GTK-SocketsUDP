@@ -18,7 +18,7 @@ La cabecera UDP tiene solo 4 campos: puerto origen, puerto destino, longitud y c
 </p>
 <div><b>Fig 1  Los campos del paquete UDP.</b></div><br>
 <div>
-	<IMG src="picture_library/GtkUdp/UdpPacket.png">
+	<IMG src="images/UdpPacket.png">
 	</div>
 	<h3>La clase UDPClient</h3>
 	<p align="justify">
@@ -55,7 +55,7 @@ Es importante entender que en un modelo de comunicación sin conexión como UDP 
 </p>
 <div><b>Fig 3 Modelo de comunicación petición/respuesta</b></div><br>
 <div>
-<IMG src="picture_library/GtkUdp/udpcommunications.png"></div><br>
+<IMG src="images/udpcommunications.png"></div><br>
 <p align="justify">
 Cada petición es un arreglo de bytes se salida procedente del cliente. Este arreglo de bytes se envía al servidor mediante TCP/IP, donde se convierte en la entrada del servidor. La respuesta entonces es el arreglo de bytes que salen del servidor para actuar como la entrada del cliente.
 Debido a la simpleza de este modelo, presenta las siguientes limitaciones:
@@ -71,11 +71,11 @@ Para mostrar como trabaja la comunicación entre un cliente y un servidor UDP ut
 			</p>
 			<div><b>Fig 4 Ejemplo de un time server UDP con una GUI GTK#</b></div>
 			<div>
-			<IMG src="picture_library/GtkUdp/fig4.png">
+			<IMG src="images/fig4.png">
 			</div>
 			<div><b>Fig 5 Ejemplo de un cliente UDP con una GUI GTK#</b></div>
 			<div>
-			<IMG src="picture_library/GtkUdp/fig5.png">
+			<IMG src="images/fig5.png">
 			</div>
 			<h3>Pasos para la construcción de un servidor UDP GTK#</h3>
 			<p align="justify">
@@ -160,17 +160,17 @@ A continuación unas imágenes del cliente y del servidor comunicándose entre s
 </p>
 <div><b>Fig 6 Configurando el servidor de fecha y hora</b></div>
 <div>
-	<IMG src="picture_library/GtkUdp/fig6.png">
+	<IMG src="images/fig6.png">
 </div>
 <div><b>Fig 7 Ejecutando el servidor de fecha y hora</b></div>
 <div>
-	<IMG src="picture_library/GtkUdp/fig7.png">
+	<IMG src="images/fig7.png">
 </div>
 <div><b>Fig 8 Ejecutando el cliente GTK# Udp</b></div>
 <div>
-	<IMG src="picture_library/GtkUdp/fig8.png">
+	<IMG src="images/fig8.png">
 </div>
 <div><b>Fig 9 Obteniendo la respuesta de servidor UDP</b></div>
 <div>
-	<IMG src="picture_library/GtkUdp/fig9.png">
+	<IMG src="images/fig9.png">
 </div>
