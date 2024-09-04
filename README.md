@@ -1,4 +1,4 @@
-# Entendiendo la programación de Sockets UDP con GTK# y .NET
+# Entendiendo la programación de Sockets UDP con C# 
 		
 <p align="justify">
 UDP (User Datagram Protocol) es un protocolo de datagramas, no orientado a la conexión mucho más sencillo, poco fiable y de alto rendimiento, que a diferencia de TCP no incluye todas características para garantizar la entrega de paquetes, tales como recuperación de fallas, chequeo de errores o control de flujo.
