@@ -67,17 +67,17 @@ Debido a la simpleza de este modelo, presenta las siguientes limitaciones:
 			</ul>
 <p align="justify">
 Para mostrar como trabaja la comunicación entre un cliente y un servidor UDP utilizando la clase UdpClient escribí dos programas: un servidor y un cliente UDP.
-			Ambos programas utilizan una interfaz de usuario (GUI) en GTK# para comunicarse entre ellos.
+			Ambos programas utilizan una interfaz de usuario (GUI) para comunicarse entre ellos.
 			</p>
-			<div><b>Fig 4 Ejemplo de un time server UDP con una GUI GTK#</b></div>
+			<div><b>Fig 4 Ejemplo de un time server UDP</b></div>
 			<div>
 			<IMG src="images/fig4.png">
 			</div>
-			<div><b>Fig 5 Ejemplo de un cliente UDP con una GUI GTK#</b></div>
+			<div><b>Fig 5 Ejemplo de un cliente UDP</b></div>
 			<div>
 			<IMG src="images/fig5.png">
 			</div>
-			<h3>Pasos para la construcción de un servidor UDP GTK#</h3>
+			<h3>Pasos para la construcción de un servidor UDP</h3>
 			<p align="justify">
 El servidor UDP envía la fecha y la hora actual de la máquina a los clientes que se conecten en su número de puerto, durante los minutos que el servidor se encuentre activo, ambos el número de puerto y los minutos son especificados por el usuario en la pantalla.
 </p>
@@ -110,12 +110,12 @@ Para construir un servidor UDP se requieren de los siguientes pasos:
 			byte[] data = Encoding.UTF8.GetBytes(response.ToString());
 			udpClient.Send(data,data.Length,IPremoteEP);
 	</pre>
-<h3>Pasos para la construcción de un cliente UDP GTK#</h3>
+<h3>Pasos para la construcción de un cliente UDP</h3>
 <p align="justify">
 El cliente UDP solicita un petición al número de puerto del servidor, recibiendo la respuesta como una matriz de bytes, la convierte a una cadena y la muestra en la pantalla.
 </p>
 <p>
-El proyecto del cliente UDP GTK# se compone de 2 clientes:
+El proyecto del cliente UDP se compone de 2 clientes:
 </p>
 <ol>
  <li>1. La clase <b>MainWindow.cs</b> es la clase que construye la GUI del cliente, solicita los parámetros: numero de puerto y dirección IP para configurar la comunicación, maneja los eventos para recibir la respuesta del servidor y mostrar el resultado en pantalla o las posibles excepciones.
@@ -166,7 +166,7 @@ A continuación unas imágenes del cliente y del servidor comunicándose entre s
 <div>
 	<IMG src="images/fig7.png">
 </div>
-<div><b>Fig 8 Ejecutando el cliente GTK# Udp</b></div>
+<div><b>Fig 8 Ejecutando el cliente UDP</b></div>
 <div>
 	<IMG src="images/fig8.png">
 </div>
